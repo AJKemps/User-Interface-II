@@ -1,1 +1,69 @@
 /* Add CSS styling here */
+
+*{
+    box-sizing:border-box;
+    padding:1%;
+    margin:1%;
+    max-width:100%;
+    border: 2px solid gray;
+}
+body{
+    background-color: #FFEFD5;
+    font-family: 'Montserrat', sans-serif;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+}
+nav{
+    width:100%;
+    display: flex;
+    justify-content: flex-start;
+}
+button{
+    background-color: white;
+    padding:1%;
+    margin:1%;
+}
+button:hover{
+    background-color: #FFFACD;
+
+}
+.info{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    padding: auto;
+    margin: auto;   
+}
+.info-sub div{
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    
+}
+.info div{
+    width:50%;
+}
+
+.projects{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+.project{
+    width: 22%;
+    height: 10%;
+}
+h4{
+    text-align: center;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
