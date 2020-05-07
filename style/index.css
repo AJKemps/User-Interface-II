@@ -1,23 +1,43 @@
 /* Add CSS styling here */
 
+html{
+    font-size: 62.5%;
+
+}
 *{
     box-sizing:border-box;
-    padding:1%;
-    margin:1%;
-    max-width:100%;
+    padding:0%;
+    margin:0%;
     
+}
+.container{
+    border: 5px solid red;
+    max-width:100%;
+    width: 1200px;
+    margin: 0 auto;
 }
 body{
     background-color: #FFFAF0;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 0.22em;
-    margin:1%;
-    padding:1%;
+    /* margin:1%;
+    padding:1%; */
+}
+h1{
+    font-size: 6rem;
+}
+h2{
+    font-size: 3rem;
+}
+h3, h4, p{
+    font-size: 2rem;
+
 }
 header{
     display: flex;
     flex-direction: column;
     margin: 0%;
+    padding: 2% 0% 0% 4%;
     background-color: #4682B4;
     font-color: FFFAF0;
 }
@@ -30,6 +50,7 @@ button{
     background-color: white;
     padding:1%;
     margin:1%;
+    font-size: 1.6rem;
 }
 button:hover{
     background-color: #FFFACD;
@@ -39,8 +60,10 @@ button:hover{
     display: flex;
     align-content: center;
     justify-content: space-between;
-    padding: auto;
-    margin: auto;   
+    padding: 4%;  
+}
+.info img{
+    width: 100%;
 }
 .info div{
     width: 48%;
@@ -59,6 +82,7 @@ button:hover{
 }
 .info-sub div{
     width: auto;
+    padding: 0%;
 }
 .info-sub button{
     height: 8%;
@@ -70,11 +94,15 @@ button:hover{
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-    
+    padding: 4%; 
 }
 .project{
     width: 22%;
     height: 10%;
+    padding: 0.5%;
+}
+.project img{
+    width: 100%;
 }
 h4{
     text-align: center;
@@ -84,6 +112,7 @@ footer{
     flex-direction: column;
     align-items: center;
     background-color: #4682B4;
+    padding: 4%;
 }
 button{
     font-family: 'Montserrat', sans-serif;
@@ -94,4 +123,68 @@ button{
     width: 8%;
     height: 4%;
     box-sizing: initial;
+    margin: 2% 0;
+}
+@media(max-width: 800px){
+    button{
+        font-size: 0.5rem;
+    }
+    header{
+        padding: 2% 0% 2% 0%;
+    }
+    header h1{
+        margin: auto;
+        padding: 2%;
+    }
+    nav button{
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        padding: 1%;
+    }
+    .info-sub div p{
+        font-size: 1.5rem;
+    }
+}
+@media(max-width: 500px){
+
+    .info div{
+        width: 100%;
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 4%;  
+    }
+    .info div{
+        padding: 4%;
+    }
+    .info-sub{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .info-sub button{
+        display: flex;
+        justify-content: space-around;
+        margin: 2% auto 2% auto;
+    }
+    h2, p{
+        text-align: center;
+        padding: 2%;
+    }
+    .project{
+        width: 44%;
+        height: 10%;
+        padding: 0.5%;
+    }
+    .projects{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 4%;
+    }
+    
 }
