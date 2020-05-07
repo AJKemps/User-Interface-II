@@ -11,7 +11,7 @@ html{
     
 }
 .container{
-    border: 5px solid red;
+    /* border: 5px solid red; */
     max-width:100%;
     width: 1200px;
     margin: 0 auto;
@@ -43,6 +43,7 @@ header{
 }
 nav{
     width:100%;
+    max-width: 100%;
     display: flex;
     justify-content: flex-start;
 }
@@ -66,6 +67,7 @@ nav{
 }
 .info-sub p{
     line-height: 200%;
+    font-size: 2.0rem;
 }
 .info-sub p a{
     padding: 0%;
@@ -105,6 +107,9 @@ footer{
     background-color: #4682B4;
     padding: 4%;
 }
+footer a{
+    font-size: 1.5rem;
+}
 button{
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 0.22em;
@@ -122,6 +127,11 @@ button:hover{
     background-color: #FFFACD;
 
 }
+@media(max-width: 1000px){
+    .info-sub div p{
+        font-size: 1.4rem;
+    }
+}
 @media(max-width: 800px){
     button{
         font-size: 1.3rem;
@@ -131,7 +141,7 @@ button:hover{
         padding: 2% 0% 2% 0%;
     }
     header h1{
-        margin: auto;
+        text-align: center;
         padding: 2%;
     }
     nav button{
